@@ -1,0 +1,25 @@
+<button class="button" data-modal-open>Заказать услугу</button>
+<div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+        <button class="modal-close-btn" data-modal-close>X</button>
+        <p class="modal-main-text">Оставьте свои данные, мы вам перезвоним</p>
+        <form></form>
+    </div>
+</div>
+
+<script>
+    (() => {
+        const refs = {
+            openModalBtn: document.querySelector('[data-modal-open]'),
+            closeModalBtn: document.querySelector('[data-modal-close]'),
+            modal: document.querySelector('[data-modal]'),
+        };
+
+        refs.openModalBtn.addEventListener('click', toggleModal);
+        refs.closeModalBtn.addEventListener('click', toggleModal);
+
+        function toggleModal() {
+            refs.modal.classList.toggle('is-hidden');
+        }
+    })();
+</script>

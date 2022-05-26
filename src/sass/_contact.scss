@@ -1,0 +1,122 @@
+.button {
+  color: $button-color-main;
+  background-color: $button-bg-main;
+  font-style: normal;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.03em;
+  font-weight: 400;
+
+  align-items: center;
+  width: 426px;
+  height: 100px;
+
+  display: inline-block;
+  border-radius: 10px;
+}
+.contact-section {
+  display: flex;
+}
+
+.contact-text-box {
+  width: 768px;
+  margin-left: 144px;
+}
+
+.contact-main-text {
+  margin-bottom: 60px;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 1.5;
+  color: var(--title-color);
+}
+
+.contact-description-text {
+  margin-bottom: 30px;
+  width: 654px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.5;
+  color: var(--text-color);
+}
+
+.contact-form-field {
+  display: flex;
+}
+
+.contact-form-field input {
+  width: 425px;
+  height: 70px;
+  border: 1px solid #8f95a5;
+  box-sizing: border-box;
+  border-radius: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.contact-form-field-btn {
+  min-width: 312px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  background: var(--button-color);
+  border-radius: 10px;
+  border: 0;
+  padding: 20px 56px;
+  margin-left: 30px;
+  transition: transform 250ms var(--timing-function);
+}
+
+.contact-form-field-btn:hover {
+  transform: scale(1.1);
+}
+.contact-image {
+  position: absolute;
+  z-index: 3;
+  top: 44px;
+  left: 16px;
+}
+.icon-hair {
+  position: absolute;
+  left: 159px;
+  top: 53px;
+  z-index: 2;
+  fill: #263238;
+  transition: fill 150ms var(--timing-function);
+}
+
+.img-box {
+  width: 425px;
+  height: 430px;
+  position: relative;
+}
+
+.img-box:hover .icon-hair {
+  fill: #23b0f6;
+}
+
+.img-box:hover .icon-trausers {
+  fill: #ffd600;
+}
+.icon-trausers {
+  position: absolute;
+  left: 169px;
+  top: 205px;
+  z-index: 1;
+  fill: #263238;
+  transition: fill 150ms var(--timing-function);
+}
+
+.icon-grass {
+  position: absolute;
+  top: 200px;
+  left: 39px;
+  transition: fill 150ms var(--timing-function);
+}
+
+.img-box:hover .icon-grass {
+  fill: #1db56c;
+}
