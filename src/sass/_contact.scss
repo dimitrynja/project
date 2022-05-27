@@ -1,19 +1,19 @@
-.button {
-  color: $button-color-main;
-  background-color: $button-bg-main;
-  font-style: normal;
-  line-height: 1.5;
-  text-align: center;
-  letter-spacing: 0.03em;
-  font-weight: 400;
+// .button {
+//   color: $button-color-main;
+//   background-color: $button-bg-main;
+//   font-style: normal;
+//   line-height: 1.5;
+//   text-align: center;
+//   letter-spacing: 0.03em;
+//   font-weight: 400;
 
-  align-items: center;
-  width: 426px;
-  height: 100px;
+//   align-items: center;
+//   width: 426px;
+//   height: 100px;
 
-  display: inline-block;
-  border-radius: 10px;
-}
+//   display: inline-block;
+//   border-radius: 10px;
+// }
 .contact-section {
   display: flex;
 }
@@ -28,7 +28,7 @@
   font-weight: 600;
   font-size: 48px;
   line-height: 1.5;
-  color: var(--title-color);
+  color: $title-color;
 }
 
 .contact-description-text {
@@ -37,7 +37,7 @@
   font-weight: 400;
   font-size: 20px;
   line-height: 1.5;
-  color: var(--text-color);
+  color: $text-color;
 }
 
 .contact-form-field {
@@ -61,8 +61,8 @@
   line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #ffffff;
-  background: var(--button-color);
+  color: $btn-color-main;
+  background: $btn-bg-main;
   border-radius: 10px;
   border: 0;
   padding: 20px 56px;

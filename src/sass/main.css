@@ -64,35 +64,34 @@ address {
 }
 
 .section {
-  width: 1600px;
-  padding-left: 131px;
-  padding-right: 131px;
   background-color: #ffffff;
-  margin: 0 auto;
 }
 
-.button {
+.btn {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
   font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.5;
-  text-align: center;
   letter-spacing: 0.03em;
-  align-items: center;
-  display: inline-block;
   border-radius: 10px;
   box-sizing: border-box;
+  transition: color 150ms cubic-bezier(0.4, 0, 0.2, 1), background-color 150ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn--primary {
-  background-color: #ffffff;
+  background-color: #263238;
   color: #ffffff;
 }
 
 .btn--second {
-  background-color: #263238;
+  background-color: #ffffff;
   color: #263238;
+  border: 1px solid #263238;
 }
 
 .header {
@@ -101,14 +100,22 @@ address {
 
 .navigation__wrap {
   display: flex;
+  align-items: center;
+  padding-bottom: 55px;
+  padding-top: 55px;
 }
 
 .navigation {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
 
 .navigation__list {
   display: flex;
+  align-items: center;
+  margin: 0 auto;
 }
 
 .navigation__item:not(:last-child) {
@@ -117,19 +124,12 @@ address {
 
 .navigation__link {
   display: inline-block;
-  padding: 75px 0px;
-  font-family: "Poppins";
   font-weight: 500;
-  font-size: 20px;
   line-height: 1.5;
   color: #263238;
 }
 
 .header__logo {
-  padding-top: 63px;
-  padding-bottom: 63px;
-  margin-right: 228px;
-  font-family: "Poppins";
   font-weight: 400;
   font-size: 36px;
   line-height: 1.5;
@@ -142,24 +142,16 @@ address {
   color: #939393;
 }
 
-.btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-left: auto;
-  margin-top: 55px;
-  width: 312px;
-  height: 70px;
-  border: 2px solid #263238;
-  border-radius: 10px;
-  background-color: transparent;
-  font-family: inherit;
+.btn-header {
+  padding: 20px 56px;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 30px;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: #000000;
+  min-width: 312px;
+}
+
+.btn-header:hover,
+.btn-header:focus {
+  background-color: #263238;
+  color: #ffffff;
 }
 
 .button {
@@ -248,7 +240,8 @@ address {
 
 .hero-content {
   max-width: 540px;
-  flex-basis: 50%;
+  flex-basis: calc(100% - 654px);
+  position: relative;
 }
 
 .hero-title {
@@ -259,27 +252,31 @@ address {
   margin-bottom: 40px;
 }
 
+.bulb-icon {
+  position: absolute;
+  top: 92px;
+  right: 50px;
+}
+
 .hero-text {
+  font-weight: 400;
   font-size: 24px;
   line-height: 1.5;
   margin-bottom: 60px;
 }
 
-.button {
-  font-family: "Poppins";
-  font-style: normal;
+.btn-hero {
+  padding: 23px 64px;
   font-weight: 400;
   font-size: 36px;
-  line-height: 54px;
-  color: #ffffff;
-  background-color: #263238;
-  text-align: center;
-  letter-spacing: 0.03em;
-  align-items: center;
-  width: 426px;
-  height: 100px;
-  display: inline-block;
-  border-radius: 10px;
+  line-height: 1.5;
+  min-width: 426px;
+}
+
+.btn-hero:hover,
+.btn-hero:focus {
+  color: #263238;
+  background-color: #ffffff;
 }
 
 .skills__title--primary {
@@ -409,21 +406,6 @@ address {
   color: #8f95a5;
 }
 
-.button {
-  color: #ffffff;
-  background-color: #263238;
-  font-style: normal;
-  line-height: 1.5;
-  text-align: center;
-  letter-spacing: 0.03em;
-  font-weight: 400;
-  align-items: center;
-  width: 426px;
-  height: 100px;
-  display: inline-block;
-  border-radius: 10px;
-}
-
 .contact-section {
   display: flex;
 }
@@ -438,7 +420,7 @@ address {
   font-weight: 600;
   font-size: 48px;
   line-height: 1.5;
-  color: var(--title-color);
+  color: #000000;
 }
 
 .contact-description-text {
@@ -447,7 +429,7 @@ address {
   font-weight: 400;
   font-size: 20px;
   line-height: 1.5;
-  color: var(--text-color);
+  color: #8f95a5;
 }
 
 .contact-form-field {
@@ -472,7 +454,7 @@ address {
   text-align: center;
   letter-spacing: 0.03em;
   color: #ffffff;
-  background: var(--button-color);
+  background: #263238;
   border-radius: 10px;
   border: 0;
   padding: 20px 56px;
