@@ -3,10 +3,10 @@
   "version": "1.1.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://HelenaGingembre.github.io/project",
+  "homepage": "https://dimitrynja.github.io/test-project",
   "scripts": {
     "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /project/"
+    "build": "parcel build src/*.html --public-url /test-project/"
   },
   "repository": {
     "type": "git",
